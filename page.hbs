@@ -1,0 +1,14 @@
+{{!< default}}
+{{#post}}
+	<article id="{{slug}}">
+		<header class="col-xs-12">
+			<h1 class="row-margin">
+				<a href="{{url}}" title="{{title}}">{{{title}}}</a>
+			</h1>
+			<br />
+			<small><time datetime="YYYY-MM-DD">{{date format="DD MMMM YYYY"}}</time></small>
+		</header>
+		{{content}}
+		<small class="tags">{{tags prefix=" On "}}</small>
+	</article>
+{{/post}}

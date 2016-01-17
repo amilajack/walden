@@ -1,0 +1,18 @@
+{
+  "name": "Walden",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "https://github.com/Hashable/so-clean",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~4"
+  }
+}
