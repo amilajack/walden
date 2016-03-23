@@ -3,9 +3,7 @@ import del from 'del'
 import babel from 'gulp-babel'
 
 const scripts = [
-  'LeetCode/*',
-  'Math/*',
-  'Reverse/*'
+  //
 ];
 const distPath = './dist'
 
