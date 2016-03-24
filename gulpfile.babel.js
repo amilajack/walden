@@ -1,12 +1,12 @@
 import gulp from 'gulp'
 import del from 'del'
 import gulpLoadPlugins from 'gulp-load-plugins'
-import runSequence from 'run-sequence';
+import runSequence from 'run-sequence'
 
 const $ = gulpLoadPlugins()
 
-const vendor = ['/assets/vendor']
-const compiled = '/assets/css'
+const vendor = './assets/vendor'
+const compiled = './assets/css'
 const styles = {
   input: [
     './assets/scss/**/**/*.scss'
@@ -20,7 +20,7 @@ const scripts = {
 const blogPath = '/Users/amila/Documents/Projects/blog/content/themes/walden'
 
 // Remove all compiled styles and scripts
-gulp.task('clean', cb => del([styles.output], { dot: true }))
+gulp.task('clean', cb => del([styles.output, vendor], { dot: true }))
 
 // Bower
 gulp.task('bower', () => {
@@ -54,6 +54,6 @@ gulp.task('copy', () => {
 gulp.task('dev', ['styles', 'styles:watch'])
 
 // Default
-gulp.task('default', [], cb => {
-  runSequence('clean', 'bower', 'styles');
+gulp.task('default', cb => {
+  runSequence('clean', 'bower', 'styles', cb)
 })
