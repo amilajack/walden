@@ -17,6 +17,7 @@ const scripts = {
   input: [],
   output: []
 }
+const blogPath = '/Users/amila/Documents/Projects/blog'
 
 // Remove all compiled styles and scripts
 gulp.task('clean', cb => del([styles.output], { dot: true }))
@@ -40,6 +41,11 @@ gulp.task('styles', () => {
 // Watch styles
 gulp.task('styles:watch', () => {
   gulp.watch(styles.input, ['styles'])
+})
+
+// Copy
+gulp.task('copy', () => {
+  return gulp.src(['**/**', '*'], { base: '.' }).pipe(gulp.dest(blogPath))
 })
 
 // Dev

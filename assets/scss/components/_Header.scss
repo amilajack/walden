@@ -1,7 +1,8 @@
 .Header {
 
   &-logo {
-    @include center-block;
+    display: block;
+    margin: auto 0;
   }
 
   &-logo-text{
