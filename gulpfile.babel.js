@@ -17,7 +17,7 @@ const scripts = {
   input: [],
   output: []
 }
-const blogPath = '/Users/amila/Documents/Projects/blog'
+const blogPath = '/Users/amila/Documents/Projects/blog/content/themes/walden'
 
 // Remove all compiled styles and scripts
 gulp.task('clean', cb => del([styles.output], { dot: true }))

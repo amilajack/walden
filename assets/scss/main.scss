@@ -26,13 +26,13 @@
 // @import "../vendor/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities";
 
 // Utilities
-@import './utilities/typography';
-@import './utilities/margin';
-@import './utilities/image';
+@import 'utilities/typography';
+@import 'utilities/margin';
+@import 'utilities/image';
 
 // Components
-@import './components/Base';
-@import './components/Header';
-@import './components/Project';
-@import './components/Article';
-@import './components/Post';
+@import 'components/Base';
+@import 'components/Header';
+@import 'components/Project';
+@import 'components/Article';
+@import 'components/Post';
