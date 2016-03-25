@@ -10,3 +10,9 @@ main {
 p {
 	line-height: 2rem;
 }
+
+:selection,
+::selection {
+  background: $brand-primary;
+  color: white;
+}
