@@ -11,8 +11,7 @@ p {
 	line-height: 2rem;
 }
 
-:selection,
 ::selection {
-  background: $brand-primary;
-  color: white;
+    color: white !important;
+    background: $brand-primary !important;
 }

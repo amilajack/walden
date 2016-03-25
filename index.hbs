@@ -1,38 +1,42 @@
 {{!< default}}
 
-{{#foreach posts}}
-  <article class="{{post_class}} col-xs-12 IndexPost">
-    <header class="post-header row-margin">
-      {{#if image}}
-        <a href="{{url}}">
-          <div class="row" style="height: 300px;">
-            <div
-              class="Post-preview background-image-center"
-              style="background:url('{{image}}')">
-            </div>
-          </div>
-        </a>
-      {{/if}}
-      <a href="{{url}}">
-        <h2 class="row-margin">{{title}}</h2>
-      </a>
-    </header>
-    <!-- Preview -->
-    <section class="post-excerpt">
-      <p>{{excerpt words="26"}} <a class="read-more" href="{{url}}">...</a></p>
-    </section>
-    <!-- Time, tags -->
-    <footer class="post-footer">
-      <!-- {{tags}} -->
-      {{#foreach tags}}
-        <a href="{{ url }}">
-          <h6 class="Tag">#{{name}}</h6>
-        </a>
-      {{/foreach}}
-      <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
-    </footer>
-  </article>
+<div class="container">
+  {{#foreach posts}}
+    <div class="row">
+      <article class="{{post_class}} col-xs-12 IndexPost">
+        <header class="post-header row-margin">
+          {{#if image}}
+            <a href="{{url}}">
+              <div class="row" style="height: 300px;">
+                <div
+                  class="Post-preview background-image-center"
+                  style="background:url('{{image}}')">
+                </div>
+              </div>
+            </a>
+          {{/if}}
+          <a href="{{url}}">
+            <h2 class="row-margin">{{title}}</h2>
+          </a>
+        </header>
+        <!-- Preview -->
+        <section class="post-excerpt">
+          <p>{{excerpt words="26"}} <a class="read-more" href="{{url}}">...</a></p>
+        </section>
+        <!-- Time, tags -->
+        <footer class="post-footer">
+          <!-- {{tags}} -->
+          {{#foreach tags}}
+            <a href="{{ url }}">
+              <h6 class="Tag">#{{name}}</h6>
+            </a>
+          {{/foreach}}
+          <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
+        </footer>
+      </article>
+    </div>
   {{/foreach}}
+</div>
 <hr />
 
 {{pagination}}

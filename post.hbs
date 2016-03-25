@@ -2,18 +2,28 @@
 {{#post}}
 	<article id="{{slug}}" class="col-xs-12">
 		{{#if image}}
-		<div class="col-xs-12 row-margin-lg" style="height: 400px">
-			<div class="Post-preview background-image-center" style="background:url('{{image}}')"></div>
-		</div>
-		{{/if}}
-		<header class="row-margin-lg">
-			<h1>
-				<a href="{{url}}" title="{{title}}">{{{title}}}</a>
-			</h1>
-			<!-- <br /> -->
-			<small><time datetime="YYYY-MM-DD">{{date format="DD MMMM YYYY"}}</time></small>
-		</header>
-		{{content}}
-		<small class="tags">{{tags prefix=" On "}}</small>
+    <div class="container">
+      <div class="row">
+  		  <div class="col-xs-12 row-margin-lg" style="height: 400px">
+    			<div class="Post-preview background-image-center" style="background:url('{{image}}')"></div>
+    		</div>
+  		</div>
+  		{{/if}}
+      <div class="row">
+        <header class="col-xs-12">
+    			<div class="row-margin-lg">
+    			  <h1>
+      				<a href="{{url}}" title="{{title}}">{{{title}}}</a>
+      			</h1>
+      			<!-- <br /> -->
+      			<small><time datetime="YYYY-MM-DD">{{date format="DD MMMM YYYY"}}</time></small>
+    			</div>
+    		</header>
+    		<div class="col-xs-12">
+    		  {{content}}
+      		<small class="tags">{{tags prefix=" On "}}</small>
+    		</div>
+      </div>
+    </div>
 	</article>
 {{/post}}
