@@ -19,8 +19,8 @@ body {
   font-family: $normal;
 }
 
-p {
-  font-family: $pargraph-font !important;
+ul, li, p {
+  font-family: $font-family-serif !important;
 }
 
 .social-icons {
