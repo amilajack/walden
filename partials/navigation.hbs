@@ -1,7 +1,14 @@
 <nav role="main" class="nav nav-inline row-margin">
-	{{#foreach navigation}}
-	<a class="nav-link" href="{{url absolute="true" }}" title="{{label}}">
-		<h6>{{label}}</h6>
-	</a>
-	{{/foreach}}
+	<div class="container">
+    <!-- Nav links -->
+    <div class="row">
+      <div class="col-xs-12">
+        {{#foreach navigation}}
+      	<a class="nav-link" href="{{url absolute="true" }}" title="{{label}}">
+      		<h6>{{label}}</h6>
+      	</a>
+      	{{/foreach}}
+      </div>
+    </div>
+	</div>
 </nav>

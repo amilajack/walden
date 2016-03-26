@@ -18,3 +18,17 @@
 body {
   font-family: $normal;
 }
+
+p {
+  font-family: $pargraph-font !important;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-icons i.social-icon {
+  font-size: 1.7rem;
+  margin: 5px;
+}

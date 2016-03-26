@@ -45,7 +45,10 @@ gulp.task('styles:watch', () => {
 
 // Copy
 gulp.task('copy', () => {
-  return gulp.src(['**/**', '!./assets/vendor/**', '!./node_modules/**', '!./.git/**', '*'], { base: '.' })
+  return gulp.src([
+    'partials/*', 'assets/**/*', '*.hbs', 'package.json'
+  ], { base: '.' })
+    .pipe($.newer(blogPath))
     .pipe(gulp.dest(blogPath))
 })
 
