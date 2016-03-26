@@ -38,11 +38,6 @@ gulp.task('styles', () => {
     .pipe(gulp.dest(styles.output))
 })
 
-// Watch styles
-gulp.task('styles:watch', () => {
-  gulp.watch(styles.input, ['styles'])
-})
-
 // Copy
 gulp.task('copy', () => {
   return gulp.src([
@@ -52,8 +47,11 @@ gulp.task('copy', () => {
     .pipe(gulp.dest(blogPath))
 })
 
-// Dev
-gulp.task('dev', ['styles', 'styles:watch'])
+// Watch styles and views
+// Compile and copy on change
+gulp.task('dev', ['styles', 'copy'], () => {
+  gulp.watch(['*', '**/*'].concat(styles.input), ['copy', 'styles'])
+})
 
 // Default
 gulp.task('default', cb => {
