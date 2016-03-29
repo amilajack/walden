@@ -1,6 +1,10 @@
 {
   "name": "Walden",
-  "description": "",
+  "version": "0.0.2",
+  "authors": [
+    "Amila Welihinda"
+  ],
+  "description": "A clean and simple theme inspired by Walden",
   "main": "",
   "license": "MIT",
   "homepage": "https://github.com/amilajack/walden",
@@ -8,7 +12,8 @@
   "ignore": [
     "**/.*",
     "node_modules",
-    "bower_components",
+    "assets/vendor",
+    "assets/css",
     "test",
     "tests"
   ],
