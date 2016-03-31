@@ -1,22 +1,9 @@
-// main {
-// 	max-width: 800px;
-// }
-@media (min-width: 500px) {
-  // main {
-  //   margin: 3em auto;
-  // 	padding: 0 3.5em;
-  // }
-}
 p {
 	line-height: 2rem;
   margin-bottom: 2rem;
 }
 
 ::selection {
-    color: white !important;
-    background: $brand-primary !important;
-}
-
-.row {
-  overflow: scroll;
+  color: white !important;
+  background: $brand-primary !important;
 }
