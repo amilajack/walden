@@ -13,13 +13,14 @@
 
 		<!-- Asset links -->
 		<link href='https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic,700' rel='stylesheet' type='text/css'>
-		<link href='http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css' rel='stylesheet' type='text/css'>
+		<link href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css' rel='stylesheet' type='text/css'>
+		<link href='https://raw.githubusercontent.com/LukeAskew/prism-github/master/prism-github.css' rel='stylesheet' type='text/css'>
 		<link href="{{asset "/css/main.css"}}" media="screen" rel="stylesheet" />
 		<link rel="shortcut icon" href="{{asset "favicon.ico" }}" type="image/x-icon">
 	</head>
 
 	<body class="{{body_class}}">
-		<main>
+		<main class="container">
 			<header class="Header col-xs-12 text-center">
 				<a class="logo" href="{{@blog.url}}" title="{{@blog.description}}">
 					<div class="Header-logo col-xs-12 row-margin-lg">
@@ -39,5 +40,6 @@
 	<!-- jQuery first, then Bootstrap JS. -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
   <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.4.1/prism.min.js"></script>
 
 </html>

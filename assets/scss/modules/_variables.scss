@@ -20,3 +20,10 @@ $gray-base:                 #7C7C7C;
 $gray-darker:               #C7C7C7;
 $gray-dark:                 #383838;
 $enable-rounded:            false;
+
+$container-max-widths: (
+  sm: 576px,
+  md: 720px,
+  lg: 700px,
+  xl: 800px
+) !default;
