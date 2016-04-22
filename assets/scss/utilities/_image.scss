@@ -9,6 +9,9 @@ img {
     max-width: 100%;
 }
 
-article p img {
-  margin: 3rem 0;
+
+@include media-breakpoint-up(md) {
+  article p img {
+    margin: 3rem 0;
+  }
 }
