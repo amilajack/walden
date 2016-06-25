@@ -9,13 +9,15 @@
 .Tag {
   display: inline-block;
   border-radius: 5px;
-  padding: 7px;
+  padding-right: 7px;
   margin-right: 20px;
   width: auto;
+  margin-top: 20px !important;
+  margin: 20px 0 !important;
 }
-.Post {
-
-  p:nth-child(first) {
-
-  }
+.post-footer {
+  opacity: 0.5;
+}
+.post p {
+  margin: 0;
 }
