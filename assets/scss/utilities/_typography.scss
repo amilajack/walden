@@ -27,6 +27,23 @@ p a {
   text-decoration: underline;
 }
 
+blockquote {
+  margin: 1.6em 0;
+  padding: 0 1.6em 0 1.6em;
+  border-left: #dfe1e3 0.6em solid;
+}
+blockquote:before {
+  color: #ccc;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+blockquote p {
+  font-size: 1.5rem;
+}
+
 .social-icons {
   display: flex;
   justify-content: center;
